@@ -1,0 +1,514 @@
+{
+  "Actor": {
+    "types": ["character", "npc", "monster"],
+    "templates": {
+      "basic": {
+        "attributes": {
+          "ac": {
+            "value": 10
+          },
+          "hp": {
+            "value": 10,
+            "hd": 1,
+            "min": 0,
+            "max": 10,
+            "temp": 0,
+            "tempmax": 0
+          },
+          "movement": {
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0,
+            "walk": 30,
+            "units": "ft",
+            "hover": false
+          },
+          "senses": {
+            "darkvision": 0,
+            "blindsight": 0,
+            "tremorsense": 0,
+            "truesight": 0,
+            "units": "ft",
+            "special": ""
+          }
+        },
+        "traits": {
+          "size": "med"
+        }
+      },
+      "common": {
+        "abilities": {
+          "str": {
+            "value": 10,
+            "bonus": 0
+          },
+          "dex": {
+            "value": 10,
+            "bonus": 0
+          },
+          "con": {
+            "value": 10,
+            "bonus": 0
+          },
+          "int": {
+            "value": 10,
+            "bonus": 0
+          },
+          "wis": {
+            "value": 10,
+            "bonus": 0
+          },
+          "cha": {
+            "value": 10,
+            "bonus": 0
+          }
+        },
+        "details": {
+          "biography": {
+            "value": "",
+            "public": ""
+          }
+        },
+        "currency": {
+          "pp": 0,
+          "gp": 0,
+          "ep": 0,
+          "sp": 0,
+          "cp": 0
+        }
+      },
+      "hero": {
+        "attributes": {
+          "spellcasting": "int"
+        },
+        "traits": {
+          "languages": {
+            "value": [],
+            "custom": ""
+          }
+        },
+        "spells": {
+          "spell1": {
+            "value": 0,
+            "override": null
+          },
+          "spell2": {
+            "value": 0,
+            "override": null
+          },
+          "spell3": {
+            "value": 0,
+            "override": null
+          },
+          "spell4": {
+            "value": 0,
+            "override": null
+          },
+          "spell5": {
+            "value": 0,
+            "override": null
+          },
+          "spell6": {
+            "value": 0,
+            "override": null
+          }
+        },
+        "turn-undead": {
+          "hd1": {
+            "value": 0,
+            "override": null
+          },
+          "hd2": {
+            "value": 0,
+            "override": null
+          },
+          "hd3": {
+            "value": 0,
+            "override": null
+          },
+          "hd4": {
+            "value": 0,
+            "override": null
+          },
+          "hd5": {
+            "value": 0,
+            "override": null
+          },
+          "hd6": {
+            "value": 0,
+            "override": null
+          },
+          "hd7": {
+            "value": 0,
+            "override": null
+          },
+          "hd8": {
+            "value": 0,
+            "override": null
+          },
+          "hd9": {
+            "value": 0,
+            "override": null
+          }
+        },
+        "thief": {
+          "open-locks": {
+            "value": 0,
+            "override": null
+          },
+          "remove-traps": {
+            "value": 0,
+            "override": null
+          },
+          "pick-pockets": {
+            "value": 0,
+            "override": null
+          },
+          "move-silently": {
+            "value": 0,
+            "override": null
+          },
+          "climb-walls": {
+            "value": 0,
+            "override": null
+          },
+          "hide": {
+            "value": 0,
+            "override": null
+          },
+          "listen": {
+            "value": 0,
+            "override": null
+          }
+        },
+        "saves": {
+          "death-ray-or-poison": {
+            "class": 0,
+            "race": 0,
+            "override": null
+          },
+          "magic-wand": {
+            "class": 0,
+            "race": 0,
+            "override": null
+          },
+          "paralisys-or-petrify": {
+            "class": 0,
+            "race": 0,
+            "override": null
+          },
+          "dragon-breath": {
+            "class": 0,
+            "race": 0,
+            "override": null
+          },
+          "spells": {
+            "class": 0,
+            "race": 0,
+            "override": null
+          }
+        }
+      },
+      "monster": {
+        "attributes": {
+          "no-of-attacks": {
+            "value": "",
+            "override": null
+          },
+          "damage": {
+            "value": "",
+            "override": null
+          },
+          "no-appearing": {
+            "value": "",
+            "override": null
+          },
+          "save-as": {
+            "value": "",
+            "override": null
+          },
+          "morale": {
+            "value": "",
+            "override": null
+          },
+          "xp": {
+            "value": "",
+            "override": null
+          }
+        }
+      }
+    },
+    "htmlFields": ["details.biography.value", "details.biography.public"],
+    "character": {
+      "templates": ["basic", "common", "hero"],
+      "attributes": {
+        "encumbrance": {
+          "value": null,
+          "max": null
+        }
+      },
+      "details": {
+        "xp": {
+          "value": 0,
+          "min": 0,
+          "max": 300
+        },
+        "background": "",
+        "appearance": "",
+        "trait": "",
+        "ideal": "",
+        "bond": "",
+        "flaw": ""
+      },
+      "resources": {
+        "primary": {
+          "value": 0,
+          "max": 0,
+          "sr": 0,
+          "lr": 0
+        },
+        "secondary": {
+          "value": 0,
+          "max": 0,
+          "sr": 0,
+          "lr": 0
+        },
+        "tertiary": {
+          "value": 0,
+          "max": 0,
+          "sr": 0,
+          "lr": 0
+        }
+      },
+      "traits": {
+        "weaponProf": {
+          "value": [],
+          "custom": ""
+        },
+        "armorProf": {
+          "value": [],
+          "custom": ""
+        },
+        "toolProf": {
+          "value": [],
+          "custom": ""
+        }
+      }
+    },
+    "npc": {
+      "templates": ["basic", "common"],
+      "details": {
+        "type": "",
+        "environment": "",
+        "cr": 1,
+        "spellLevel": 0,
+        "xp": {
+          "value": 10
+        },
+        "source": ""
+      },
+      "resources": {
+        "legact": {
+          "value": 0,
+          "max": 0
+        },
+        "legres": {
+          "value": 0,
+          "max": 0
+        },
+        "lair": {
+          "value": 0,
+          "initiative": 0
+        }
+      }
+    },
+    "monster": {
+      "templates": ["basic", "monster"]
+    }
+  },
+  "Item": {
+    "types": ["weapon", "equipment", "consumable", "tool", "loot", "class", "spell", "feat", "backpack"],
+    "templates": {
+      "itemDescription": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": ""
+      },
+      "physicalItem": {
+        "quantity": 1,
+        "weight": 0,
+        "price": 0,
+        "attuned": false,
+        "attunement": 0,
+        "equipped": false,
+        "rarity": "",
+        "identified": true
+      },
+      "activatedEffect": {
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        }
+      },
+      "action": {
+        "ability": null,
+        "actionType": null,
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        }
+      },
+      "mountable": {
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        }
+      }
+    },
+    "htmlFields": ["description.value", "description.chat", "description.unidentified"],
+    "backpack": {
+      "templates": ["itemDescription", "physicalItem"],
+      "capacity": {
+        "type": "weight",
+        "value": 0,
+        "weightless": false
+      },
+      "currency": {
+        "cp": 0,
+        "sp": 0,
+        "ep": 0,
+        "gp": 0,
+        "pp": 0
+      }
+    },
+    "class": {
+      "templates": ["itemDescription"],
+      "levels": 1,
+      "subclass": "",
+      "hitDice": "d6",
+      "hitDiceUsed": 0,
+      "skills": {
+        "number": 2,
+        "choices": [],
+        "value": []
+      },
+      "spellcasting": "none"
+    },
+    "consumable": {
+      "templates": ["itemDescription", "physicalItem", "activatedEffect", "action"],
+      "consumableType": "potion",
+      "uses": {
+        "autoDestroy": false
+      }
+    },
+    "equipment": {
+      "templates": ["itemDescription", "physicalItem", "activatedEffect", "action", "mountable"],
+      "armor": {
+        "type": "light",
+        "value": 10,
+        "dex": null
+      },
+      "speed": {
+        "value": null,
+        "conditions": ""
+      },
+      "strength": 0,
+      "stealth": false,
+      "proficient": true
+    },
+    "feat": {
+      "templates": ["itemDescription", "activatedEffect", "action"],
+      "requirements": "",
+      "recharge": {
+        "value": null,
+        "charged": false
+      }
+    },
+    "loot": {
+      "templates": ["itemDescription", "physicalItem"]
+    },
+    "tool": {
+      "templates": ["itemDescription", "physicalItem"],
+      "ability": "int",
+      "chatFlavor": "",
+      "proficient": 0
+    },
+    "spell": {
+      "templates": ["itemDescription", "activatedEffect", "action"],
+      "level": 1,
+      "school": "",
+      "components": {
+        "value": "",
+        "vocal": false,
+        "somatic": false,
+        "material": false,
+        "ritual": false,
+        "concentration": false
+      },
+      "materials": {
+        "value": "",
+        "consumed": false,
+        "cost": 0,
+        "supply": 0
+      },
+      "preparation": {
+        "mode": "prepared",
+        "prepared": false
+      },
+      "scaling": {
+        "mode": "none",
+        "formula": null
+      }
+    },
+    "weapon": {
+      "templates": ["itemDescription", "physicalItem" ,"activatedEffect", "action", "mountable"],
+      "weaponType": "simpleM",
+      "properties": {},
+      "proficient": true
+    }
+  }
+}

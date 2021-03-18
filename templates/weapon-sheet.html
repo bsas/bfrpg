@@ -1,0 +1,20 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <h1>weapon</h1>
+    <div>
+        <span>{{localize "BFRPG.labels.weaponType"}}</span>
+        <span>
+            <select name="data.weaponType">
+                {{#select data.weaponType}}
+                {{#each BFRPG.weaponTypes as |name type|}}
+                <option value="{{type}}">{{localize name}}</option>
+                {{/each}}
+                {{/select}}
+            </select>
+            <input name="data.damage" type="text" value="{{data.damage}}" />
+        </span>
+    </div>
+</form>

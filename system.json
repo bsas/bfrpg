@@ -1,0 +1,25 @@
+{
+  "name": "bfrpg",
+  "title": "Basic Fantasy Role-Playing Game",
+  "description": "A simple game system for Basic Fantasy Role-Playing Game.",
+  "version": "0.0.1",
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.7.9",
+  "templateVersion": 2,
+  "author": "bsas",
+  "esmodules": ["module/simple.js"],
+  "styles": ["styles/simple.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": null,
+  "initiative": "1d6 + @attributes.dex.bonus"
+}

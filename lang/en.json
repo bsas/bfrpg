@@ -1,0 +1,16 @@
+{
+  "BFRPG": {
+    "labels": {
+      "weaponType": "Weapon Type"
+    },
+    "weaponTypes": {
+      "axe": "Axe",
+      "bow": "Bow",
+      "dagger": "Dagger",
+      "sword": "Sword",
+      "hammer": "Hammer",
+      "mace": "Mace",
+      "other": "Other"
+    }
+  }
+}

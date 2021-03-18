@@ -1,0 +1,24 @@
+# Autodetect text files
+* text=auto eol=lf
+
+# ...Unless the name matches the following
+# overriding patterns
+
+# Definitively text files 
+*.txt text
+*.js text
+*.json text
+*.properties text
+*.gradle text
+*.xml text
+*.md text
+*.cmd text
+
+# Windows files
+*.bat text eol=crlf
+
+# Ensure those won't be messed up with
+*.jpg binary
+*.jar binary
+*.ico binary
+*.png binary

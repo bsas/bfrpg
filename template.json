@@ -1,0 +1,41 @@
+{
+	"Actor": {},
+	"Item": {
+		"types": ["weapon", "equipment"],
+		"templates": {
+            "itemDescription": {
+              "description": {
+                "value": "",
+                "chat": "",
+                "unidentified": ""
+              },
+              "source": ""
+            },
+			"physicalItem": {
+				"quantity": 1,
+				"weight": 0,
+				"price": 0,
+				"equipped": false,
+				"rarity": "",
+				"identified": true
+			}
+		},
+		"equipment": {
+			"templates": ["itemDescription", "physicalItem"]
+		},
+		"weapon": {
+			"templates": ["itemDescription", "physicalItem"],
+			"weaponType": "sword",
+			"missile": false,
+			"ranges" {
+				"short": 0,
+				"medium": 0,
+				"long": 0
+			},
+            "size": "S",
+            "damage": "1d6",
+			"properties": {},
+			"proficient": true
+		}
+	}
+}
