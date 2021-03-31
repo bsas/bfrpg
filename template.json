@@ -27,7 +27,7 @@
 			"templates": ["itemDescription", "physicalItem"],
 			"weaponType": "sword",
 			"missile": false,
-			"ranges" {
+			"ranges": {
 				"short": 0,
 				"medium": 0,
 				"long": 0
